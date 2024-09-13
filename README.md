@@ -84,7 +84,7 @@
 ### 12. Department_Medicine
 - medic_id (INT, FK)
 - depart_id (INT, FK)
-+ quantity: int
+- quantity: int
 ### 13. Supplier_Medicine
 - medic_id (INT, FK)
 - supplir_id (INT, FK)
