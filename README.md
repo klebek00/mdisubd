@@ -90,7 +90,8 @@
 - medic_id (INT, FK)
 - supplir_id (INT, FK)
 
-![Uploading image.png…]()
 
+
+![Диаграмма без названия drawio (6)](https://github.com/user-attachments/assets/6886a9d0-ddb5-4445-915d-0ead7d7524c1)
 
 
