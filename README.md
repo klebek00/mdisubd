@@ -90,6 +90,7 @@
 - medic_id (INT, FK)
 - supplir_id (INT, FK)
 
+![Uploading image.png…]()
 
 
 
