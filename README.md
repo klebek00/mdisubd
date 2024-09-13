@@ -71,11 +71,12 @@
 - cart_id (INT, FK)
 - department_id (INT, FK)
 - promocode_id (INT, FK, NULLABLE)
+- price (INT)
+- price_prom (INT)
 - date (DATETIME, NOT NULL)
 ### 10. Cart
 - id (INT, PK, AUTO_INCREMENT)
 - user_id (INT, FK)
-- created_at (DATETIME)
 ### 11. CartItem
 - id (INT, PK, AUTO_INCREMENT)
 - cart_id (INT, FK)
@@ -84,7 +85,7 @@
 ### 12. Department_Medicine
 - medic_id (INT, FK)
 - depart_id (INT, FK)
-- quantity: int
+- quantity: (INT)
 ### 13. Supplier_Medicine
 - medic_id (INT, FK)
 - supplir_id (INT, FK)
