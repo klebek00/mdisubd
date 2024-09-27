@@ -96,6 +96,9 @@
 
 
 
-![Диаграмма без названия drawio (6)](https://github.com/user-attachments/assets/6886a9d0-ddb5-4445-915d-0ead7d7524c1)
+
+
+![Диаграмма без названия drawio (6) drawio](https://github.com/user-attachments/assets/a1c360ce-d842-4f65-bf02-90f448cf91b1)
+
 
 
