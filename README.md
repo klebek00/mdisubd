@@ -68,25 +68,29 @@
 ### 9. Sale
 - id (INT, PK, AUTO_INCREMENT)
 - user_id (INT, FK)
-- cart_id (INT, FK)
 - department_id (INT, FK)
 - promocode_id (INT, FK, NULLABLE)
 - price (INT)
-- price_prom (INT)
 - date (DATETIME, NOT NULL)
-### 10. Cart
+### 10. SaleItem
+- id: INT, PK, AUTO_INCREMENT
+- sale_id: INT, FK 
+- medicine_id: INT, FK
+- quantity: INT, NOT NULL
+- price: INT
+### 11. Cart
 - id (INT, PK, AUTO_INCREMENT)
 - user_id (INT, FK)
-### 11. CartItem
+### 12. CartItem
 - id (INT, PK, AUTO_INCREMENT)
 - cart_id (INT, FK)
 - medicine_id (INT, FK)
 - quantity (INT, NOT NULL)
-### 12. Department_Medicine
+### 13. Department_Medicine
 - medic_id (INT, FK)
 - depart_id (INT, FK)
 - quantity: (INT)
-### 13. Supplier_Medicine
+### 14. Supplier_Medicine
 - medic_id (INT, FK)
 - supplir_id (INT, FK)
 
