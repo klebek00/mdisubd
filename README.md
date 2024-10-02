@@ -23,17 +23,19 @@
 - CRUD операции с данными
 - Просмотр журна действий пользователя
 ## 2.2 Список сущностей
-### 1. User
-- id: (INT, PK, AUTO_INCREMENT) 
+### 1. User//
+- id: (INT, PK, AUTO_INCREMENT)
+- name: (VARCHAR(50), NOT NULL)
 - login: (VARCHAR(25), NOT NULL)
 - password: (VARCHAR(50), NOT NULL)
+- email: (VARCHAR(255), NOT NULL)
 - status: (VARCHAR(25), NOT NULL, UNIQUE)
-### 2. Logs
+### 2. Logs//
 - id (INT, PK) 
 - action_date (DATETIME)
 - action (VARCHAR(200))
 - user_id (INT, FK)
-### 3. Medicines
+### 3. Medicines//
 - id: (INT, PK, AUTO_INCREMENT)
 - name: (VARCHAR(100), NOT NULL)
 - code: (VARCHAR(10), NOT NULL)
@@ -42,15 +44,20 @@
 - cost: (INT, NOT NULL)
 - photo: (VARCHAR(100), NOT NULL)
 - categories_id: (INT, FK)
-### 4. Categories
+- supplier_id: (INT, FK)
+### 4. Categories//
 - id: (INT, PK, AUTO_INCREMENT)
 - name: (VARCHAR(100), NOT NULL)
-### 5. Department
+### 5. Department//
 - no: (INT, PK)
 - address: (VARCHAR(200), NOT NULL)
 - open: (DATETIME)
 - close: (DATETIME)
-### 6. Supplier
+### 6. Department_Medicine ??
+- depart_id: INT
+- medic_id:  INT
+- quantity: INT
+### 6. Supplier//
 - id: (INT, PK)
 - name: (VARCHAR(100), NOT NULL)
 - address: (VARCHAR(100), NOT NULL)
@@ -58,7 +65,7 @@
 - id: (INT, PK)
 - code: (VARCHAR(20), NOT NULL)
 - discount: (INT, NOT NULL)
-### 8. Review
+### 8. Review//
 - id: (INT, PK)
 - user_id (INT, FK)
 - title: (VARCHAR(100), NOT NULL)
@@ -78,7 +85,7 @@
 - medicine_id: INT, FK
 - quantity: INT, NOT NULL
 - price: INT
-### 11. Cart
+### 11. Cart//
 - id (INT, PK, AUTO_INCREMENT)
 - user_id (INT, FK)
 ### 12. CartItem
@@ -86,13 +93,6 @@
 - cart_id (INT, FK)
 - medicine_id (INT, FK)
 - quantity (INT, NOT NULL)
-### 13. Department_Medicine
-- medic_id (INT, FK)
-- depart_id (INT, FK)
-- quantity: (INT)
-### 14. Supplier_Medicine
-- medic_id (INT, FK)
-- supplir_id (INT, FK)
 
 
 
