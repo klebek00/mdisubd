@@ -1,0 +1,1 @@
+GET_ALL_DEPARTMENTS = "SELECT no, address, open, close FROM department;"
